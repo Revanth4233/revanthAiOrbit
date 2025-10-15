@@ -195,9 +195,32 @@ const ToolDetailsModal = ({ isOpen, onClose, tool }: ToolDetailsModalProps) => {
                     Platforms to Sell On:
                   </h4>
                   <div className="flex flex-wrap gap-2">
-                    {tool.monetization.platforms.map((platform, i) => (
-                      <Badge key={i} variant="secondary" className="text-xs break-words">{platform}</Badge>
-                    ))}
+                    {tool.monetization.platforms.map((platform, i) => {
+                      const parts = platform.split(' - ');
+                      const name = parts[0];
+                      const url = parts[1];
+                      
+                      if (url) {
+                        return (
+                          <Button
+                            key={i}
+                            variant="outline"
+                            size="sm"
+                            className="text-xs h-auto py-1.5 px-3"
+                            asChild
+                          >
+                            <a href={url} target="_blank" rel="noopener noreferrer">
+                              {name} <ExternalLink className="w-3 h-3 ml-1" />
+                            </a>
+                          </Button>
+                        );
+                      }
+                      return (
+                        <Badge key={i} variant="secondary" className="text-xs">
+                          {platform}
+                        </Badge>
+                      );
+                    })}
                   </div>
                 </div>
 
