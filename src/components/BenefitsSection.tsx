@@ -30,7 +30,7 @@ const BenefitsSection = () => {
       <div className="container mx-auto">
         <div id="benefits" className="text-center mb-16 space-y-4 animate-fade-in scroll-mt-16">
           <h2 className="text-4xl lg:text-5xl font-bold">
-            Why Choose <span className="bg-gradient-accent bg-clip-text text-transparent">AIOrbit</span>
+            Top AI Tools for <span className="bg-gradient-accent bg-clip-text text-transparent">Making Money and Learning New Skills</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Turn free AI tools into multiple income streams. Learn how to make $500-$5000+ monthly through freelancing, digital products, content creation, and automation services.
