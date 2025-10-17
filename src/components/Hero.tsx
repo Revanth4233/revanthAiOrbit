@@ -31,18 +31,16 @@ const Hero = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight">
+              Discover the Best{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Transform Your Ideas Into Reality
-              </span>
-              <br />
-              <span className="text-foreground">
-                With AI-Powered Innovation
-              </span>
+                Free AI Platform
+              </span>{" "}
+              in 2025
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-xl">
-              "The best way to predict the future is to create it with AI." 
-              Explore 100+ free AI tools curated to amplify your creativity and productivity.
+              Unlock Your Potential With AIOrbit – The Ultimate Free AI Platform for 2025. 
+              Access over 100 free AI tools curated for productivity, learning, and income.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -77,7 +75,7 @@ const Hero = () => {
             <div className="absolute inset-0 bg-gradient-primary opacity-20 blur-3xl rounded-3xl" />
             <img 
               src={heroImage} 
-              alt="AI Tools Platform Dashboard" 
+              alt="AI platform dashboard and top free AI tools 2025" 
               className="relative rounded-3xl shadow-glow border border-primary/20 w-full"
             />
           </div>

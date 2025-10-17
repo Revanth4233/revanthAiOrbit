@@ -34,14 +34,14 @@ const ToolsSection = () => {
     <section id="tools" className="py-20 px-4 bg-secondary/20 scroll-mt-16">
       <div className="container mx-auto">
         {/* Header */}
-        <div className="text-center mb-12 space-y-4 animate-fade-in">
+        <header className="text-center mb-12 space-y-4 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold">
-            Explore <span className="bg-gradient-primary bg-clip-text text-transparent">AI Tools</span>
+            100+ Free AI Tools for <span className="bg-gradient-primary bg-clip-text text-transparent">Productivity, Creativity, and Automation</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Discover the perfect AI tool for your needs. Filter by category or search for specific features.
+            Discover the best AI platform with powerful free AI tools. Filter by category or search for specific features to boost your workflow.
           </p>
-        </div>
+        </header>
 
         {/* Search Bar */}
         <div className="max-w-2xl mx-auto mb-8">

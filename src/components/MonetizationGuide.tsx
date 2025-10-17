@@ -295,14 +295,14 @@ const MonetizationGuide = () => {
   return (
     <section id="monetization" className="py-20 px-4 bg-secondary/30 scroll-mt-16">
       <div className="container mx-auto max-w-7xl">
-        <div className="text-center mb-16 space-y-4 animate-fade-in">
+        <header className="text-center mb-16 space-y-4 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold">
-            How to <span className="bg-gradient-primary bg-clip-text text-transparent">Make Money</span> Using AI Tools
+            Top AI Tools for <span className="bg-gradient-primary bg-clip-text text-transparent">Making Money</span> and Learning New Skills
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Turn AI skills into real income. Comprehensive guides for each category with tools, platforms, and proven strategies.
+            Turn AI skills into real income. Comprehensive guides for each category with the best AI tools, platforms, and proven strategies.
           </p>
-        </div>
+        </header>
 
         <Tabs defaultValue="writing" className="w-full">
           <TabsList className="grid grid-cols-3 lg:grid-cols-5 gap-2 h-auto bg-card p-2 mb-8">
