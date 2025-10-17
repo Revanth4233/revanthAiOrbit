@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Search, Menu, X, LogOut } from "lucide-react";
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 
@@ -10,7 +10,7 @@ const Navbar = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const navigate = useNavigate();
+  
   const { toast } = useToast();
 
   useEffect(() => {
@@ -48,7 +48,7 @@ const Navbar = () => {
         title: "Signed out successfully",
         description: "Come back soon!",
       });
-      navigate('/');
+      window.location.assign('/');
     }
   };
 
@@ -91,11 +91,11 @@ const Navbar = () => {
               </Button>
             ) : (
               <>
-                <Button variant="outline" onClick={() => navigate('/auth')}>
-                  Sign In
+                <Button asChild variant="outline">
+                  <Link to="/auth">Sign In</Link>
                 </Button>
-                <Button variant="hero" onClick={() => navigate('/auth')}>
-                  Get Started
+                <Button asChild variant="hero">
+                  <Link to="/auth">Get Started</Link>
                 </Button>
               </>
             )}
@@ -144,11 +144,11 @@ const Navbar = () => {
                 </Button>
               ) : (
                 <>
-                  <Button variant="outline" className="flex-1" onClick={() => navigate('/auth')}>
-                    Sign In
+                  <Button asChild variant="outline" className="flex-1">
+                    <Link to="/auth">Sign In</Link>
                   </Button>
-                  <Button variant="hero" className="flex-1" onClick={() => navigate('/auth')}>
-                    Get Started
+                  <Button asChild variant="hero" className="flex-1">
+                    <Link to="/auth">Get Started</Link>
                   </Button>
                 </>
               )}

@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles, ArrowRight } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const CTASection = () => {
-  const navigate = useNavigate();
+  
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -37,9 +37,11 @@ const CTASection = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center pt-4">
-            <Button variant="hero" size="lg" className="text-lg group" onClick={() => navigate('/auth')}>
-              Start Free Trial
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            <Button asChild variant="hero" size="lg" className="text-lg group">
+              <Link to="/auth">
+                Start Free Trial
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
             </Button>
             <Button variant="outline" size="lg" className="text-lg" onClick={() => scrollToSection('tools')}>
               Explore All Tools

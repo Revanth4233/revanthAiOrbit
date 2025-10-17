@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles, Zap } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-ai.jpg";
 
 const Hero = () => {
-  const navigate = useNavigate();
+  
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -44,9 +44,10 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <Button variant="hero" size="lg" className="text-lg" onClick={() => navigate('/auth')}>
-                <Zap className="w-5 h-5" />
-                Get Started Free
+              <Button asChild variant="hero" size="lg" className="text-lg">
+                <Link to="/auth">
+                  <span className="inline-flex items-center gap-2"><Zap className="w-5 h-5" />Get Started Free</span>
+                </Link>
               </Button>
               <Button variant="outline" size="lg" className="text-lg" onClick={() => scrollToSection('tools')}>
                 Explore Tools
