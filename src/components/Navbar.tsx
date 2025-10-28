@@ -70,6 +70,9 @@ const Navbar = () => {
             <button onClick={() => scrollToSection('monetization')} className="text-foreground hover:text-primary transition-colors">
               Make Money
             </button>
+            <Link to="/blog" className="text-foreground hover:text-primary transition-colors">
+              Blog
+            </Link>
             <button onClick={() => scrollToSection('testimonials')} className="text-foreground hover:text-primary transition-colors">
               Reviews
             </button>
@@ -133,6 +136,9 @@ const Navbar = () => {
             <button onClick={() => scrollToSection('monetization')} className="block w-full text-left py-2 hover:text-primary transition-colors">
               Make Money
             </button>
+            <Link to="/blog" className="block w-full text-left py-2 hover:text-primary transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
+              Blog
+            </Link>
             <button onClick={() => scrollToSection('testimonials')} className="block w-full text-left py-2 hover:text-primary transition-colors">
               Reviews
             </button>
