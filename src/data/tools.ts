@@ -142,6 +142,85 @@ export const tools: Tool[] = [
   { id: "make", name: "Make", description: "Visual automation platform with AI capabilities", category: "Automation", rating: 4.7, reviews: 2400, tags: ["Visual", "Advanced", "Integration"], link: "https://make.com" },
   { id: "n8n", name: "n8n", description: "Open-source workflow automation with AI nodes", category: "Automation", rating: 4.7, reviews: 1280, tags: ["Open-source", "Self-hosted", "Advanced"], link: "https://n8n.io" },
   { id: "bardeen", name: "Bardeen", description: "AI automation tool for browser-based workflows", category: "Automation", rating: 4.6, reviews: 1120, tags: ["Browser automation", "No-code", "Productivity"], link: "https://bardeen.ai" },
+  
+  // Email Assistance AI Tools
+  { id: "superhuman", name: "Superhuman", description: "Blazingly fast email with AI-powered features and shortcuts", category: "Email", rating: 4.8, reviews: 2100, tags: ["Email", "Speed", "Productivity"], link: "https://superhuman.com" },
+  { id: "shortwave", name: "Shortwave", description: "AI email assistant that helps you reach inbox zero faster", category: "Email", rating: 4.7, reviews: 1420, tags: ["Free", "Email", "AI assistant"], link: "https://shortwave.com" },
+  { id: "mailmaestro", name: "Mailmaestro", description: "Free AI email assistant that writes better emails faster", category: "Email", rating: 4.6, reviews: 980, tags: ["Free", "Email writing", "Productivity"], link: "https://mailmaestro.com" },
+  { id: "clippit", name: "Clippit.Ai", description: "Free AI-powered email assistant for Gmail and Outlook", category: "Email", rating: 4.5, reviews: 680, tags: ["Free", "Gmail", "Outlook"], link: "https://clippit.ai" },
+  { id: "friday-ai", name: "Friday", description: "Free AI email writer that helps you craft perfect emails", category: "Email", rating: 4.5, reviews: 520, tags: ["Free", "Email writing", "Simple"], link: "https://friday.app" },
+  
+  // Spreadsheet AI Tools
+  { id: "rows-ai", name: "Rows AI", description: "Free AI-powered spreadsheet with integrated data sources", category: "Spreadsheet", rating: 4.7, reviews: 1280, tags: ["Free", "Data analysis", "Integration"], link: "https://rows.com" },
+  { id: "formula-bot", name: "Formula Bot", description: "Free AI that writes Excel and Google Sheets formulas", category: "Spreadsheet", rating: 4.6, reviews: 920, tags: ["Free", "Formulas", "Excel"], link: "https://formulabot.com" },
+  { id: "sheetai", name: "SheetAI", description: "Free AI assistant for Google Sheets automation", category: "Spreadsheet", rating: 4.5, reviews: 680, tags: ["Free", "Google Sheets", "Automation"], link: "https://sheetai.app" },
+  { id: "bricks", name: "Bricks", description: "Free AI spreadsheet that creates visuals from your data", category: "Spreadsheet", rating: 4.7, reviews: 1120, tags: ["Free", "Visualization", "Easy"], link: "https://bricksapp.io" },
+  { id: "gigasheet", name: "Gigasheet", description: "Free AI-powered spreadsheet for big data analysis", category: "Spreadsheet", rating: 4.6, reviews: 580, tags: ["Free", "Big data", "Analysis"], link: "https://gigasheet.com" },
+  
+  // More Presentation AI Tools
+  { id: "slidesgo-ai", name: "Slidesgo", description: "Free AI-powered presentation templates and designs", category: "Presentations", rating: 4.7, reviews: 2800, tags: ["Free", "Templates", "Google Slides"], link: "https://slidesgo.com" },
+  { id: "presentations-ai", name: "Presentations.AI", description: "Free AI presentation maker with instant slide generation", category: "Presentations", rating: 4.6, reviews: 1120, tags: ["Free", "Fast", "Professional"], link: "https://presentations.ai" },
+  { id: "plus-ai", name: "Plus AI", description: "Free AI presentation tool for Google Slides", category: "Presentations", rating: 4.6, reviews: 980, tags: ["Free", "Google Slides", "Automation"], link: "https://plusdocs.com" },
+  { id: "popai", name: "PopAI", description: "Free AI-powered presentation creator with templates", category: "Presentations", rating: 4.5, reviews: 720, tags: ["Free", "Templates", "Simple"], link: "https://popai.pro" },
+  
+  // More Chatbot AI Tools
+  { id: "deepseek", name: "DeepSeek", description: "Free advanced AI chatbot for coding and reasoning", category: "Chatbots", rating: 4.7, reviews: 1420, tags: ["Free", "Coding", "Advanced"], link: "https://deepseek.com" },
+  { id: "grok", name: "Grok", description: "Free AI assistant with real-time information access", category: "Chatbots", rating: 4.6, reviews: 1680, tags: ["Free", "Real-time", "X integration"], link: "https://grok.x.ai" },
+  { id: "meta-ai", name: "Meta AI", description: "Free AI assistant by Meta for chat and creation", category: "Chatbots", rating: 4.6, reviews: 2100, tags: ["Free", "Multimodal", "Integration"], link: "https://ai.meta.com" },
+  { id: "ms-copilot", name: "Microsoft Copilot", description: "Free AI assistant integrated across Microsoft products", category: "Chatbots", rating: 4.7, reviews: 3200, tags: ["Free", "Microsoft", "Integration"], link: "https://copilot.microsoft.com" },
+  
+  // More Code AI Tools
+  { id: "askcodi", name: "Askcodi", description: "Free AI coding assistant for multiple programming languages", category: "Code", rating: 4.5, reviews: 680, tags: ["Free", "Multi-language", "Learning"], link: "https://askcodi.com" },
+  { id: "codiga", name: "Codiga", description: "Free AI code analysis and security scanning", category: "Code", rating: 4.6, reviews: 820, tags: ["Free", "Security", "Code review"], link: "https://codiga.io" },
+  { id: "qodo", name: "Qodo", description: "Free AI code testing and quality assistant", category: "Code", rating: 4.5, reviews: 520, tags: ["Free", "Testing", "Quality"], link: "https://qodo.ai" },
+  
+  // More Workflow Automation AI Tools
+  { id: "integrately", name: "Integrately", description: "Free AI automation platform with 8M+ ready automations", category: "Automation", rating: 4.7, reviews: 1680, tags: ["Free", "No-code", "Templates"], link: "https://integrately.com" },
+  { id: "monday", name: "Monday.com", description: "Work management platform with free AI automation features", category: "Automation", rating: 4.8, reviews: 4200, tags: ["Free tier", "Project management", "Teams"], link: "https://monday.com" },
+  { id: "wrike", name: "Wrike", description: "Project management with free AI-powered automation", category: "Automation", rating: 4.6, reviews: 2100, tags: ["Free tier", "Project management", "Collaboration"], link: "https://wrike.com" },
+  
+  // Meeting Notes AI Tools
+  { id: "fathom", name: "Fathom", description: "Free AI meeting assistant that records and transcribes", category: "Meetings", rating: 4.8, reviews: 2400, tags: ["Free", "Recording", "Transcription"], link: "https://fathom.video" },
+  { id: "avoma", name: "Avoma", description: "Free AI meeting assistant with automated notes and insights", category: "Meetings", rating: 4.7, reviews: 1680, tags: ["Free tier", "Notes", "CRM integration"], link: "https://avoma.com" },
+  { id: "equal-time", name: "Equal Time", description: "Free AI meeting assistant for balanced conversations", category: "Meetings", rating: 4.6, reviews: 520, tags: ["Free", "Collaboration", "Insights"], link: "https://equaltime.io" },
+  { id: "fellow", name: "Fellow.app", description: "Free AI meeting management with agendas and notes", category: "Meetings", rating: 4.7, reviews: 1420, tags: ["Free tier", "Agendas", "Team collaboration"], link: "https://fellow.app" },
+  
+  // More Video AI Tools
+  { id: "luma-ai", name: "Luma AI", description: "Free AI tool for creating 3D assets and video", category: "Video", rating: 4.7, reviews: 1280, tags: ["Free", "3D", "Creative"], link: "https://lumalabs.ai" },
+  { id: "haiper-ai", name: "Haiper AI", description: "Free AI video generator with creative controls", category: "Video", rating: 4.6, reviews: 980, tags: ["Free", "Video generation", "Creative"], link: "https://haiper.ai" },
+  { id: "kling-ai", name: "Kling", description: "Free advanced AI video generator with long video support", category: "Video", rating: 4.7, reviews: 1420, tags: ["Free", "Long videos", "High quality"], link: "https://klingai.com" },
+  { id: "krea-ai", name: "Krea AI", description: "Free AI video and image generator with real-time preview", category: "Video", rating: 4.6, reviews: 880, tags: ["Free", "Real-time", "Creative"], link: "https://krea.ai" },
+  { id: "ltx-studio", name: "LTX Studio", description: "Free AI video storytelling platform", category: "Video", rating: 4.6, reviews: 720, tags: ["Free", "Storytelling", "Professional"], link: "https://ltx.studio" },
+  { id: "sora-ai", name: "Sora", description: "OpenAI's text-to-video AI model", category: "Video", rating: 4.8, reviews: 2100, tags: ["Text-to-video", "Advanced", "High quality"], link: "https://openai.com/sora" },
+  
+  // More Image Generation AI Tools
+  { id: "flux-ai", name: "FLUX.1", description: "Free advanced AI image generator with exceptional quality", category: "Image", rating: 4.8, reviews: 2400, tags: ["Free", "High quality", "Fast"], link: "https://flux-ai.io" },
+  { id: "recraft-ai", name: "Recraft", description: "Free AI design tool for vector art and illustrations", category: "Image", rating: 4.7, reviews: 1280, tags: ["Free", "Vector", "Design"], link: "https://recraft.ai" },
+  
+  // More Design AI Tools
+  { id: "autodraw", name: "AutoDraw", description: "Free AI tool that turns sketches into polished drawings", category: "Design", rating: 4.5, reviews: 1420, tags: ["Free", "Sketching", "Google"], link: "https://autodraw.com" },
+  { id: "design-com", name: "Design.com", description: "Free AI-powered logo and brand design platform", category: "Design", rating: 4.6, reviews: 1680, tags: ["Free", "Branding", "Templates"], link: "https://design.com" },
+  { id: "ms-designer", name: "Microsoft Designer", description: "Free AI graphic design tool by Microsoft", category: "Design", rating: 4.7, reviews: 2100, tags: ["Free", "Templates", "Social media"], link: "https://designer.microsoft.com" },
+  
+  // Scheduling AI Tools
+  { id: "calendly", name: "Calendly", description: "Free AI-powered scheduling platform", category: "Scheduling", rating: 4.8, reviews: 4200, tags: ["Free tier", "Scheduling", "Integration"], link: "https://calendly.com" },
+  { id: "clockwise", name: "Clockwise", description: "Free AI calendar assistant for time management", category: "Scheduling", rating: 4.7, reviews: 1680, tags: ["Free tier", "Calendar", "Teams"], link: "https://clockwise.com" },
+  { id: "taskade", name: "Taskade", description: "Free AI-powered task management and collaboration", category: "Scheduling", rating: 4.6, reviews: 1280, tags: ["Free", "Tasks", "Collaboration"], link: "https://taskade.com" },
+  { id: "trevor-ai", name: "Trevor AI", description: "Free AI daily planner for time blocking", category: "Scheduling", rating: 4.5, reviews: 680, tags: ["Free", "Time blocking", "Planning"], link: "https://trevorai.com" },
+  
+  // More Writing AI Tools
+  { id: "jotbot", name: "JotBot", description: "Free AI writing assistant that mimics your style", category: "Writing", rating: 4.6, reviews: 1120, tags: ["Free", "Style matching", "Essays"], link: "https://jotbot.ai" },
+  { id: "quarkle", name: "Quarkle", description: "Free AI writing assistant with grammar and style checks", category: "Writing", rating: 4.5, reviews: 820, tags: ["Free", "Grammar", "Style"], link: "https://quarkle.com" },
+  
+  // Data Visualization AI Tools
+  { id: "flourish", name: "Flourish", description: "Free AI-powered data visualization and storytelling", category: "Data Viz", rating: 4.7, reviews: 1680, tags: ["Free", "Visualization", "Charts"], link: "https://flourish.studio" },
+  { id: "julius-ai", name: "Julius", description: "Free AI data analyst that creates insights and charts", category: "Data Viz", rating: 4.6, reviews: 1120, tags: ["Free", "Analysis", "Charts"], link: "https://julius.ai" },
+  { id: "visme", name: "Visme", description: "Free AI design tool for presentations and infographics", category: "Data Viz", rating: 4.7, reviews: 2100, tags: ["Free tier", "Infographics", "Design"], link: "https://visme.co" },
+  { id: "deckpilot", name: "Deckpilot", description: "Free AI presentation and data visualization tool", category: "Data Viz", rating: 4.5, reviews: 680, tags: ["Free", "Presentations", "Data"], link: "https://deckpilot.com" },
+  { id: "zing-data", name: "Zing Data", description: "Free AI-powered business intelligence and data analysis", category: "Data Viz", rating: 4.6, reviews: 920, tags: ["Free", "BI", "Analysis"], link: "https://getzingdata.com" },
+  
+  // Knowledge Management AI Tools
+  { id: "tettra", name: "Tettra", description: "Free AI-powered knowledge base for teams", category: "Productivity", rating: 4.6, reviews: 1120, tags: ["Free tier", "Knowledge base", "Teams"], link: "https://tettra.com" },
 ];
 
 export const categories = [
@@ -161,5 +240,10 @@ export const categories = [
   "Social Media",
   "Website",
   "Logo",
-  "Automation"
+  "Automation",
+  "Email",
+  "Spreadsheet",
+  "Meetings",
+  "Scheduling",
+  "Data Viz"
 ];

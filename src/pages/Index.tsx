@@ -24,7 +24,7 @@ const Index = () => {
       "name": "AIOrbit",
       "url": "https://aiorbit.com",
       "logo": "https://lovable.dev/opengraph-image-p98pqg.png",
-      "description": "Best AI platform with 100+ free AI tools for productivity, creativity, and automation in 2025",
+      "description": "Best free AI platform with 100+ free AI tools for productivity, creativity, and automation in 2025 - all tools free to use",
       "sameAs": []
     });
     document.head.appendChild(organizationSchema);
@@ -37,7 +37,7 @@ const Index = () => {
       "@type": "WebSite",
       "name": "AIOrbit",
       "url": "https://aiorbit.com",
-      "description": "Find 100+ free AI tools for productivity, creativity, and automation. Discover the best AI platform for making money, learning new skills, and boosting your workflow.",
+      "description": "Find 100+ free AI tools for productivity, creativity, and automation. Discover the best free AI platform for making money, learning new skills, and boosting your workflow - all tools free to use!",
       "potentialAction": {
         "@type": "SearchAction",
         "target": "https://aiorbit.com/#tools?search={search_term_string}",
@@ -65,7 +65,7 @@ const Index = () => {
         "ratingValue": "4.8",
         "ratingCount": "1250"
       },
-      "description": "AI platform with 100+ free AI tools for productivity, creativity, and automation"
+      "description": "Best free AI platform with 100+ free AI tools for productivity, creativity, and automation - all tools free to use"
     });
     document.head.appendChild(softwareSchema);
 
