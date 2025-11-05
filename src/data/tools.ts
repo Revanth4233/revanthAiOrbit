@@ -13,6 +13,7 @@ export interface Tool {
   noSignup?: boolean;
   isFree?: boolean;
   dateAdded?: string;
+  bannerImage?: string;
 }
 
 export const tools: Tool[] = [

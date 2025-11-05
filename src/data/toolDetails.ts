@@ -8,6 +8,8 @@ export interface ToolDetails {
   tags: string[];
   link: string;
   isPro?: boolean;
+  bannerImage?: string;
+  relatedTools?: string[];
   overview: string;
   examples: {
     title: string;
@@ -48,6 +50,8 @@ export const toolDetailsData: Record<string, ToolDetails> = {
     reviews: 2500,
     tags: ["Conversational AI", "Content writing", "Code generation"],
     link: "https://chat.openai.com",
+    bannerImage: "chatgpt-banner.jpg",
+    relatedTools: ["claude", "gemini", "perplexity"],
     overview: "ChatGPT is OpenAI's revolutionary conversational AI that can assist with writing, coding, research, brainstorming, and problem-solving. It understands context and generates human-like responses across virtually any topic.",
     examples: [
       {
@@ -468,6 +472,8 @@ export const toolDetailsData: Record<string, ToolDetails> = {
     reviews: 1800,
     tags: ["Marketing copy", "Ad creation", "Content generation"],
     link: "https://copy.ai",
+    bannerImage: "copyai-banner.jpg",
+    relatedTools: ["jasper", "writesonic", "chatgpt"],
     overview: "Copy.ai is a powerful AI copywriting tool that generates high-converting marketing copy, ad campaigns, product descriptions, and sales content using advanced AI trained on top-performing copy.",
     examples: [
       {

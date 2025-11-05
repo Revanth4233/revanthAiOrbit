@@ -11,6 +11,13 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card } from "@/components/ui/card";
 import { ExternalLink, Star, Lightbulb, TrendingUp, Map, DollarSign, ShoppingBag, FileText } from "lucide-react";
 import { ToolDetails } from "@/data/toolDetails";
+import { tools } from "@/data/tools";
+import chatgptBanner from "@/assets/tools/chatgpt-banner.jpg";
+import midjourneyBanner from "@/assets/tools/midjourney-banner.jpg";
+import copyaiBanner from "@/assets/tools/copyai-banner.jpg";
+import videoToolsBanner from "@/assets/tools/video-tools-banner.jpg";
+import codingToolsBanner from "@/assets/tools/coding-tools-banner.jpg";
+import { useEffect } from "react";
 
 interface ToolDetailsModalProps {
   isOpen: boolean;
@@ -19,9 +26,82 @@ interface ToolDetailsModalProps {
 }
 
 const ToolDetailsModal = ({ isOpen, onClose, tool }: ToolDetailsModalProps) => {
+  const bannerImages: Record<string, string> = {
+    "chatgpt-banner.jpg": chatgptBanner,
+    "midjourney-banner.jpg": midjourneyBanner,
+    "copyai-banner.jpg": copyaiBanner,
+    "video-tools-banner.jpg": videoToolsBanner,
+    "coding-tools-banner.jpg": codingToolsBanner,
+  };
+
+  const bannerSrc = tool.bannerImage ? bannerImages[tool.bannerImage] : undefined;
+  
+  const relatedTools = tool.relatedTools
+    ? tools.filter(t => tool.relatedTools?.includes(t.id))
+    : [];
+
+  // Add Product Schema for SEO
+  useEffect(() => {
+    if (isOpen && typeof window !== 'undefined') {
+      const schema = {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": tool.name,
+        "description": tool.description,
+        "applicationCategory": tool.category,
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": tool.rating,
+          "reviewCount": tool.reviews,
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "url": tool.link,
+        "keywords": tool.tags.join(", ")
+      };
+
+      const scriptId = `schema-${tool.id}`;
+      let scriptTag = document.getElementById(scriptId) as HTMLScriptElement;
+      
+      if (!scriptTag) {
+        scriptTag = document.createElement('script');
+        scriptTag.id = scriptId;
+        scriptTag.type = 'application/ld+json';
+        document.head.appendChild(scriptTag);
+      }
+      
+      scriptTag.textContent = JSON.stringify(schema);
+
+      return () => {
+        const existingScript = document.getElementById(scriptId);
+        if (existingScript) {
+          existingScript.remove();
+        }
+      };
+    }
+  }, [isOpen, tool]);
+
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+        {/* Banner Image */}
+        {bannerSrc && (
+          <div className="relative w-full h-48 md:h-64 -mt-6 -mx-6 mb-4 overflow-hidden rounded-t-lg">
+            <img 
+              src={bannerSrc} 
+              alt={`${tool.name} banner`}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent"></div>
+          </div>
+        )}
+        
         <DialogHeader>
           <div className="flex flex-col md:flex-row md:items-start justify-between gap-4">
             <div className="flex-1">
@@ -276,6 +356,26 @@ const ToolDetailsModal = ({ isOpen, onClose, tool }: ToolDetailsModalProps) => {
             </Card>
           </TabsContent>
         </Tabs>
+
+        {/* Related Tools Section */}
+        {relatedTools.length > 0 && (
+          <div className="mt-6 p-4 md:p-6 bg-secondary/20 rounded-lg">
+            <h3 className="text-base md:text-lg font-semibold mb-4">Related AI Tools You Might Like</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+              {relatedTools.map((relatedTool) => (
+                <Card key={relatedTool.id} className="p-3 hover:border-primary/50 transition-colors cursor-pointer">
+                  <h4 className="font-semibold text-sm mb-1">{relatedTool.name}</h4>
+                  <p className="text-xs text-muted-foreground line-clamp-2 mb-2">{relatedTool.description}</p>
+                  <div className="flex items-center gap-2 text-xs">
+                    <Star className="w-3 h-3 fill-accent text-accent" />
+                    <span>{relatedTool.rating}</span>
+                    <Badge variant="outline" className="text-xs">{relatedTool.category}</Badge>
+                  </div>
+                </Card>
+              ))}
+            </div>
+          </div>
+        )}
       </DialogContent>
     </Dialog>
   );
