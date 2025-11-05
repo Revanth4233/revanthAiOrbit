@@ -8,6 +8,7 @@ import ToolCard from "./ToolCard";
 const ToolsSection = () => {
   const [selectedCategory, setSelectedCategory] = useState("All Tools");
   const [searchQuery, setSearchQuery] = useState("");
+  const [selectedFilter, setSelectedFilter] = useState<string | null>(null);
 
   const filteredTools = useMemo(() => {
     let filtered = tools;
@@ -15,6 +16,17 @@ const ToolsSection = () => {
     // Filter by category
     if (selectedCategory !== "All Tools") {
       filtered = filtered.filter(tool => tool.category === selectedCategory);
+    }
+
+    // Filter by special badges
+    if (selectedFilter === "New") {
+      filtered = filtered.filter(tool => tool.isNew);
+    } else if (selectedFilter === "Trending") {
+      filtered = filtered.filter(tool => tool.isTrending);
+    } else if (selectedFilter === "100% Free") {
+      filtered = filtered.filter(tool => tool.isFree);
+    } else if (selectedFilter === "No Sign-Up") {
+      filtered = filtered.filter(tool => tool.noSignup);
     }
 
     // Filter by search query
@@ -28,7 +40,7 @@ const ToolsSection = () => {
     }
 
     return filtered;
-  }, [selectedCategory, searchQuery]);
+  }, [selectedCategory, searchQuery, selectedFilter]);
 
   return (
     <section id="tools" className="py-20 px-4 bg-secondary/20 scroll-mt-16">
@@ -65,6 +77,24 @@ const ToolsSection = () => {
               </Button>
             )}
           </div>
+        </div>
+
+        {/* Special Filters */}
+        <div className="flex flex-wrap gap-3 justify-center mb-6">
+          {["New", "Trending", "100% Free", "No Sign-Up"].map((filter) => (
+            <Button
+              key={filter}
+              variant={selectedFilter === filter ? "default" : "outline"}
+              onClick={() => setSelectedFilter(selectedFilter === filter ? null : filter)}
+              className={selectedFilter === filter ? "bg-gradient-primary" : ""}
+            >
+              {filter === "New" && "🆕 "}
+              {filter === "Trending" && "🔥 "}
+              {filter === "100% Free" && "💯 "}
+              {filter === "No Sign-Up" && "⚡ "}
+              {filter}
+            </Button>
+          ))}
         </div>
 
         {/* Category Filters */}
@@ -106,6 +136,7 @@ const ToolsSection = () => {
               onClick={() => {
                 setSearchQuery("");
                 setSelectedCategory("All Tools");
+                setSelectedFilter(null);
               }}
             >
               Clear Filters

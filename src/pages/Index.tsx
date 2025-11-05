@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import JustReleasedSection from "@/components/JustReleasedSection";
 import ToolsSection from "@/components/ToolsSection";
 import CategoryGrid from "@/components/CategoryGrid";
 import BenefitsSection from "@/components/BenefitsSection";
@@ -24,7 +25,7 @@ const Index = () => {
       "name": "AIOrbit",
       "url": "https://aiorbit.com",
       "logo": "https://lovable.dev/opengraph-image-p98pqg.png",
-      "description": "Best free AI platform with 100+ free AI tools for productivity, creativity, and automation in 2025 - all tools free to use",
+      "description": "Best free AI platform with 100+ free AI tools for productivity, creativity, and automation in 2025 - all tools free to use. Updated weekly with the hottest new releases. Inspired by top releases on 'There's An AI For That'.",
       "sameAs": []
     });
     document.head.appendChild(organizationSchema);
@@ -37,7 +38,7 @@ const Index = () => {
       "@type": "WebSite",
       "name": "AIOrbit",
       "url": "https://aiorbit.com",
-      "description": "Find 100+ free AI tools for productivity, creativity, and automation. Discover the best free AI platform for making money, learning new skills, and boosting your workflow - all tools free to use!",
+      "description": "Find 100+ free AI tools for productivity, creativity, and automation. Discover the best free AI platform for making money, learning new skills, and boosting your workflow - all tools free to use! Updated weekly with the hottest new releases.",
       "potentialAction": {
         "@type": "SearchAction",
         "target": "https://aiorbit.com/#tools?search={search_term_string}",
@@ -65,7 +66,7 @@ const Index = () => {
         "ratingValue": "4.8",
         "ratingCount": "1250"
       },
-      "description": "Best free AI platform with 100+ free AI tools for productivity, creativity, and automation - all tools free to use"
+      "description": "Best free AI platform with 100+ free AI tools for productivity, creativity, and automation - all tools free to use. Updated weekly with the hottest new releases."
     });
     document.head.appendChild(softwareSchema);
 
@@ -86,6 +87,7 @@ const Index = () => {
     <div className="min-h-screen">
       <Navbar />
       <Hero />
+      <JustReleasedSection />
       <ToolsSection />
       <CategoryGrid />
       <BenefitsSection />

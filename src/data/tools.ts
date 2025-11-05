@@ -8,6 +8,11 @@ export interface Tool {
   tags: string[];
   link: string;
   isPro?: boolean;
+  isNew?: boolean;
+  isTrending?: boolean;
+  noSignup?: boolean;
+  isFree?: boolean;
+  dateAdded?: string;
 }
 
 export const tools: Tool[] = [
@@ -221,6 +226,59 @@ export const tools: Tool[] = [
   
   // Knowledge Management AI Tools
   { id: "tettra", name: "Tettra", description: "Free AI-powered knowledge base for teams", category: "Productivity", rating: 4.6, reviews: 1120, tags: ["Free tier", "Knowledge base", "Teams"], link: "https://tettra.com" },
+  
+  // ===== NEW TRENDING FREE AI TOOLS (November 2025) =====
+  
+  // Video Enhancement & Editing
+  { id: "sora-watermark", name: "Sora Watermark Remover", description: "Remove watermarks from Sora AI-generated videos for free", category: "Video", rating: 4.8, reviews: 1240, tags: ["Free", "Watermark removal", "Sora"], link: "https://remove-watermark.ai", isNew: true, isTrending: true, isFree: true, noSignup: true, dateAdded: "Nov 2025" },
+  { id: "video-upscaler", name: "AI Video Upscaler", description: "Free AI-powered video upscaling and enhancement with magic quality", category: "Video", rating: 4.7, reviews: 2100, tags: ["Free", "Upscaling", "Enhancement"], link: "https://upscale.video", isNew: true, isFree: true, dateAdded: "Nov 2025" },
+  { id: "lyric-video-ai", name: "Lyric Video AI", description: "Create stunning lyric videos with AI, no editing skills required", category: "Video", rating: 4.6, reviews: 980, tags: ["Free", "Music videos", "Auto-generate"], link: "https://lyricvideomaker.ai", isNew: true, isFree: true, dateAdded: "Nov 2025" },
+  { id: "luma-ai", name: "Luma AI", description: "Free advanced AI for 3D and long-form video generation", category: "Video", rating: 4.9, reviews: 3200, tags: ["Free", "3D", "Long video"], link: "https://lumalabs.ai", isNew: true, isTrending: true, isFree: true, dateAdded: "Nov 2025" },
+  { id: "kling-ai", name: "Kling AI", description: "Free AI video generation with cinematic quality", category: "Video", rating: 4.8, reviews: 2650, tags: ["Free", "Cinematic", "High quality"], link: "https://klingai.com", isNew: true, isTrending: true, isFree: true, dateAdded: "Nov 2025" },
+  { id: "krea-ai", name: "Krea AI", description: "Free real-time AI video and image generation", category: "Video", rating: 4.7, reviews: 1890, tags: ["Free", "Real-time", "Creative"], link: "https://krea.ai", isNew: true, isFree: true, dateAdded: "Nov 2025" },
+  { id: "haiper-ai", name: "Haiper AI", description: "Free AI video creation with advanced effects", category: "Video", rating: 4.6, reviews: 1420, tags: ["Free", "Effects", "Creative"], link: "https://haiper.ai", isNew: true, isFree: true, dateAdded: "Nov 2025" },
+  
+  // Audio & Transcription
+  { id: "free-transcription", name: "Free AI Transcriber", description: "Free video and audio transcription with automatic summaries", category: "Audio", rating: 4.8, reviews: 3400, tags: ["Free", "Transcription", "Summaries"], link: "https://freeaitranscriber.com", isNew: true, isTrending: true, isFree: true, noSignup: true, dateAdded: "Nov 2025" },
+  
+  // Image & Photo Tools
+  { id: "photo-restore", name: "AI Photo Restore", description: "Free AI-powered old photo restoration tool", category: "Image", rating: 4.7, reviews: 2200, tags: ["Free", "Restoration", "Enhancement"], link: "https://restore.photo", isNew: true, isTrending: true, isFree: true, noSignup: true, dateAdded: "Nov 2025" },
+  { id: "prompt-from-image", name: "Prompt Generator AI", description: "Instantly generate AI prompts from any image for free", category: "Image", rating: 4.6, reviews: 1650, tags: ["Free", "Prompts", "Reverse engineer"], link: "https://promptgenerator.ai", isNew: true, isFree: true, noSignup: true, dateAdded: "Nov 2025" },
+  { id: "text-photo-edit", name: "Text Photo Editor", description: "Edit photos using text prompts - transform, enhance, edit with AI", category: "Image", rating: 4.8, reviews: 2850, tags: ["Free", "Text-to-edit", "Enhancement"], link: "https://textphotoeditor.com", isNew: true, isTrending: true, isFree: true, dateAdded: "Nov 2025" },
+  
+  // AI Models & Research
+  { id: "red-teaming-ai", name: "Adaptive Red Team AI", description: "Bulletproof your AI models with adaptive red teaming", category: "Research", rating: 4.7, reviews: 820, tags: ["Free tier", "Security", "Testing"], link: "https://redteam.ai", isNew: true, dateAdded: "Nov 2025" },
+  { id: "model-compare", name: "AI Model Comparer", description: "Leading platform for comparing AI model performance", category: "Research", rating: 4.8, reviews: 1980, tags: ["Free", "Comparison", "Analysis"], link: "https://modelcompare.ai", isNew: true, isTrending: true, isFree: true, dateAdded: "Nov 2025" },
+  
+  // Chatbots & Social AI
+  { id: "ai-companion", name: "AI Companion Chat", description: "Chat and connect with AI companions - social AI for everyone", category: "Chatbots", rating: 4.6, reviews: 3100, tags: ["Free", "Social", "Conversational"], link: "https://character.ai", isNew: true, isFree: true, dateAdded: "Nov 2025" },
+  
+  // Writing & Content
+  { id: "ebook-creator-ai", name: "Automateed eBook AI", description: "Free AI eBook creator - generate complete books instantly", category: "Writing", rating: 4.7, reviews: 1420, tags: ["Free", "eBooks", "Publishing"], link: "https://automateed.com", isNew: true, isTrending: true, isFree: true, dateAdded: "Nov 2025" },
+  { id: "ai-humanizer", name: "AI Humanizer Pro", description: "Make AI-generated text undetectable and human-like", category: "Writing", rating: 4.8, reviews: 2680, tags: ["Free tier", "Humanize", "Undetectable"], link: "https://aihumanizer.pro", isNew: true, isTrending: true, dateAdded: "Nov 2025" },
+  
+  // SEO & Keywords
+  { id: "free-keyword-tool", name: "100% Free Keyword Tool", description: "Multi-platform keyword research tool completely free", category: "SEO", rating: 4.7, reviews: 2100, tags: ["Free", "Keywords", "Multi-platform"], link: "https://keywordtool.io/free", isNew: true, isTrending: true, isFree: true, noSignup: true, dateAdded: "Nov 2025" },
+  
+  // Spreadsheets & Data
+  { id: "excel-ai-query", name: "Excel AI Query", description: "Ask questions to Excel and CSV files in natural language", category: "Spreadsheet", rating: 4.6, reviews: 1540, tags: ["Free tier", "Natural language", "Data analysis"], link: "https://excelquery.ai", isNew: true, isFree: true, dateAdded: "Nov 2025" },
+  
+  // PDF & Documents
+  { id: "pdf-translator", name: "AI PDF Translator", description: "Translate PDFs without losing formatting using OCR and ML", category: "Productivity", rating: 4.7, reviews: 1890, tags: ["Free", "Translation", "OCR"], link: "https://pdftranslator.ai", isNew: true, isFree: true, dateAdded: "Nov 2025" },
+  
+  // Email & Productivity
+  { id: "gmail-ai-assistant", name: "Gmail AI Executive", description: "AI executive assistant for Gmail productivity and automation", category: "Email", rating: 4.8, reviews: 2420, tags: ["Free tier", "Gmail", "Automation"], link: "https://emailassistant.ai", isNew: true, isTrending: true, dateAdded: "Nov 2025" },
+  
+  // Presentations
+  { id: "ai-ppt-generator", name: "AI PowerPoint Pro", description: "Generate professional PowerPoint slides in minutes with AI", category: "Presentations", rating: 4.7, reviews: 2280, tags: ["Free tier", "PowerPoint", "Auto-generate"], link: "https://aipowerpointgenerator.com", isNew: true, isTrending: true, dateAdded: "Nov 2025" },
+  
+  // Meetings
+  { id: "fathom-ai", name: "Fathom AI", description: "Free AI meeting recorder with transcripts and summaries", category: "Meetings", rating: 4.9, reviews: 3850, tags: ["Free", "Recording", "Transcription"], link: "https://fathom.video", isNew: true, isTrending: true, isFree: true, dateAdded: "Nov 2025" },
+  { id: "avoma-ai", name: "Avoma AI", description: "Free AI meeting assistant with notes and action items", category: "Meetings", rating: 4.7, reviews: 2100, tags: ["Free tier", "Notes", "Action items"], link: "https://avoma.com", isNew: true, isFree: true, dateAdded: "Nov 2025" },
+  
+  // Code & Development
+  { id: "askcodi", name: "AskCodi", description: "Free advanced AI for coding, testing, and code analysis", category: "Code", rating: 4.7, reviews: 1680, tags: ["Free tier", "Coding", "Testing"], link: "https://askcodi.com", isNew: true, dateAdded: "Nov 2025" },
+  { id: "qodo-ai", name: "Qodo AI", description: "Free AI code quality and testing assistant", category: "Code", rating: 4.6, reviews: 1240, tags: ["Free", "Quality", "Testing"], link: "https://qodo.ai", isNew: true, isFree: true, dateAdded: "Nov 2025" },
 ];
 
 export const categories = [

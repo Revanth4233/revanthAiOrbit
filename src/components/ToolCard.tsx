@@ -42,19 +42,40 @@ const ToolCard = ({ tool, index }: ToolCardProps) => {
         {/* Header */}
         <div className="flex items-start justify-between">
           <div className="flex-1">
-            <div className="flex items-center gap-2 mb-2">
+            <div className="flex items-center gap-2 mb-2 flex-wrap">
               <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">
                 {tool.name}
               </h3>
               {tool.isPro && (
                 <Badge variant="secondary" className="text-xs">Pro</Badge>
               )}
+              {tool.isNew && (
+                <Badge variant="secondary" className="text-xs bg-primary/20">🆕 NEW</Badge>
+              )}
+              {tool.isTrending && (
+                <Badge variant="default" className="text-xs bg-gradient-primary">🔥 TRENDING</Badge>
+              )}
             </div>
-            <Badge variant="outline" className="text-xs">
-              {tool.category}
-            </Badge>
+            <div className="flex items-center gap-2 flex-wrap">
+              <Badge variant="outline" className="text-xs">
+                {tool.category}
+              </Badge>
+              {tool.isFree && (
+                <Badge variant="default" className="text-xs bg-green-600 hover:bg-green-700">100% FREE</Badge>
+              )}
+              {tool.noSignup && (
+                <Badge variant="secondary" className="text-xs">No Sign-Up</Badge>
+              )}
+            </div>
           </div>
         </div>
+        
+        {/* Date Added */}
+        {tool.dateAdded && (
+          <p className="text-xs text-muted-foreground italic">
+            Added: {tool.dateAdded}
+          </p>
+        )}
 
         {/* Description */}
         <p className="text-sm text-muted-foreground line-clamp-2 min-h-[40px]">
