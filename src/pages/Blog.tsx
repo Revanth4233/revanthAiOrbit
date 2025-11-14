@@ -94,7 +94,6 @@ const blogPosts: BlogPost[] = [
   }
 ];
 
-const Blog = () => {
   useEffect(() => {
     // Add Blog schema markup for SEO
     const blogSchema = document.createElement('script');
