@@ -11,31 +11,32 @@ const ToolsSection = () => {
   const [selectedFilter, setSelectedFilter] = useState<string | null>(null);
 
   const filteredTools = useMemo(() => {
-    let filtered = tools;
+    let filtered = [...tools]; // Create a copy to avoid mutations
 
-    // Filter by category
+    // Filter by category first
     if (selectedCategory !== "All Tools") {
       filtered = filtered.filter(tool => tool.category === selectedCategory);
     }
 
     // Filter by special badges
     if (selectedFilter === "New") {
-      filtered = filtered.filter(tool => tool.isNew);
+      filtered = filtered.filter(tool => tool.isNew === true);
     } else if (selectedFilter === "Trending") {
-      filtered = filtered.filter(tool => tool.isTrending);
+      filtered = filtered.filter(tool => tool.isTrending === true);
     } else if (selectedFilter === "100% Free") {
-      filtered = filtered.filter(tool => tool.isFree);
+      filtered = filtered.filter(tool => tool.isFree === true);
     } else if (selectedFilter === "No Sign-Up") {
-      filtered = filtered.filter(tool => tool.noSignup);
+      filtered = filtered.filter(tool => tool.noSignup === true);
     }
 
     // Filter by search query
-    if (searchQuery) {
-      const query = searchQuery.toLowerCase();
+    if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase().trim();
       filtered = filtered.filter(tool => 
         tool.name.toLowerCase().includes(query) ||
         tool.description.toLowerCase().includes(query) ||
-        tool.tags.some(tag => tag.toLowerCase().includes(query))
+        tool.tags.some(tag => tag.toLowerCase().includes(query)) ||
+        tool.category.toLowerCase().includes(query)
       );
     }
 
@@ -119,9 +120,9 @@ const ToolsSection = () => {
 
         {/* Tools Grid */}
         {filteredTools.length > 0 ? (
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" key={selectedCategory}>
             {filteredTools.map((tool, index) => (
-              <ToolCard key={tool.id} tool={tool} index={index} />
+              <ToolCard key={`${tool.id}-${selectedCategory}`} tool={tool} index={index} />
             ))}
           </div>
         ) : (
