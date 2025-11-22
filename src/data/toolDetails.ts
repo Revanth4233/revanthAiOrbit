@@ -750,5 +750,506 @@ export const generateToolDetails = (toolId: string, name: string, description: s
         earnings: "$3,000-8,000+/month"
       }
     ]
-  };
+  },
+  
+  notebooklm: {
+    id: "notebooklm",
+    name: "NotebookLM",
+    description: "Google's AI research assistant that works with your documents and notes",
+    category: "Research",
+    rating: 4.9,
+    reviews: 2800,
+    tags: ["Research", "Google AI", "Document analysis"],
+    link: "https://notebooklm.google.com",
+    bannerImage: "",
+    relatedTools: ["humata", "chatpdf", "perplexity"],
+    overview: "NotebookLM is Google's revolutionary AI research assistant that transforms how you work with documents. Upload your research papers, notes, PDFs, and sources, and NotebookLM becomes an expert on your content, providing instant answers, summaries, and insights grounded in your materials.",
+    examples: [
+      {
+        title: "Research Paper Analysis",
+        description: "Analyze multiple research papers and extract key findings",
+        input: "Upload 5 research papers on AI in healthcare. Ask: 'What are the common themes across these papers? What are the main challenges identified?'",
+        output: "Common Themes:\n1. Data Privacy & Security (mentioned in 4/5 papers)\n2. Integration with existing systems (3/5 papers)\n3. Clinical validation requirements (5/5 papers)\n\nMain Challenges:\n- Regulatory compliance\n- Data quality and standardization\n- Healthcare professional training\n\n[Detailed analysis with citations from each paper]"
+      },
+      {
+        title: "Study Guide Creation",
+        description: "Convert lecture notes and textbooks into study materials",
+        input: "Upload biology lecture notes and ask: 'Create a study guide for the midterm exam covering chapters 1-5. Include key concepts, definitions, and practice questions.'",
+        output: "Midterm Study Guide - Biology Chapters 1-5\n\nChapter 1: Cell Structure\nKey Concepts:\n- Cell membrane composition\n- Organelle functions\n- Cellular transport\n\nPractice Questions:\n1. Explain the difference between active and passive transport\n2. Describe the role of mitochondria...\n\n[Complete study guide with summaries and questions]"
+      },
+      {
+        title: "Meeting Notes Summary",
+        description: "Upload meeting transcripts and get action items",
+        input: "Upload meeting transcript. Ask: 'Summarize key decisions, action items with owners, and deadlines. Format as bullet points.'",
+        output: "Key Decisions:\n✓ Approved Q4 marketing budget ($50K)\n✓ Decided on new CRM platform (Salesforce)\n\nAction Items:\n→ Sarah: Launch landing page by Oct 15\n→ John: Schedule client demos by Oct 20\n→ Team: Submit Q4 goals by Oct 10\n\n[Complete summary with context]"
+      }
+    ],
+    howToUse: [
+      { title: "Upload Your Sources", description: "Visit notebooklm.google.com and create a new notebook. Upload up to 50 documents including PDFs, Google Docs, text files, websites, YouTube transcripts, and audio files. NotebookLM will analyze and index all your content." },
+      { title: "Ask Specific Questions", description: "Ask targeted questions about your content. NotebookLM provides answers with direct citations from your sources. Example: 'What methodology did the authors use in Study A? Compare it with Study B's approach.' Every answer includes source citations you can click to verify." },
+      { title: "Generate Study Guides", description: "Use NotebookLM to automatically create study guides, summaries, FAQs, timelines, and outlines from your sources. It organizes information intelligently and identifies key themes across multiple documents." },
+      { title: "Chat & Iterate", description: "Have a conversation with your documents. Follow up with clarifying questions, ask for more details on specific points, or request different formats (bullet points, tables, comparisons). NotebookLM maintains context throughout the conversation." },
+      { title: "Organize Multiple Notebooks", description: "Create separate notebooks for different projects, courses, or research topics. Each notebook maintains its own context and sources, keeping your work organized and focused." }
+    ],
+    benefits: [
+      { title: "Grounded in Your Sources", description: "Unlike ChatGPT, NotebookLM only uses information from your uploaded documents, ensuring accurate, relevant answers with zero hallucination." },
+      { title: "Automatic Citations", description: "Every answer includes clickable citations to the exact source location, making fact-checking and verification instant." },
+      { title: "Free & Privacy-Focused", description: "Completely free to use with your Google account. Your documents are private and not used to train AI models." },
+      { title: "Multi-Format Support", description: "Works with PDFs, Google Docs, websites, YouTube videos, audio files, and text documents all in one notebook." }
+    ],
+    monetization: {
+      services: [
+        "Research assistance for students (thesis, dissertations, essays)",
+        "Literature review summaries for academics",
+        "Business report analysis and insights",
+        "Legal document research and comparison",
+        "Study guide creation for online courses",
+        "Content research for writers and journalists",
+        "Technical documentation summarization"
+      ],
+      platforms: [
+        "Fiverr - Research services",
+        "Upwork - Academic research",
+        "LinkedIn - B2B research consultations",
+        "Your own tutoring/consulting site"
+      ],
+      toolCombinations: [
+        "NotebookLM + ChatGPT (research + content creation)",
+        "NotebookLM + Grammarly (research + polished writing)",
+        "NotebookLM + Notion (research + organization)",
+        "NotebookLM + Google Docs (collaborative research)"
+      ],
+      tips: [
+        "Offer 'Research Digest' service: $50-150 per project",
+        "Create study guides for online courses: $30-75 per guide",
+        "Provide literature review services: $100-300 for 10-20 papers",
+        "Offer competitive analysis reports: $200-500 per report",
+        "Bundle with content writing for comprehensive packages"
+      ]
+    },
+    roadmap: [
+      {
+        phase: "Week 1-2: Master the Tool",
+        title: "Learn NotebookLM Inside Out",
+        steps: [
+          "Create 5 test notebooks with different content types (PDFs, websites, transcripts)",
+          "Practice asking different types of questions (summarization, comparison, analysis)",
+          "Test all features: study guides, FAQs, outlines, timelines",
+          "Learn citation system and source verification",
+          "Build portfolio samples: 3 research summaries, 2 study guides, 1 comparative analysis"
+        ],
+        earnings: "Learning phase - $0"
+      },
+      {
+        phase: "Week 3-4: Launch Services",
+        title: "Get First 5-10 Clients",
+        steps: [
+          "Create Fiverr gig: 'I will research and summarize 10 sources on any topic' ($40-80)",
+          "Offer study guide creation: $30-75 per course/topic",
+          "Target students on Reddit (r/college, r/gradschool), Discord study groups",
+          "Post on LinkedIn: 'Free 30-minute research consultation' to attract clients",
+          "Join Facebook groups for grad students, researchers, writers"
+        ],
+        earnings: "$200-600"
+      },
+      {
+        phase: "Month 2-3: Specialize & Scale",
+        title: "Build Niche Authority",
+        steps: [
+          "Choose specialty: Academic research, business intelligence, or legal research",
+          "Create case studies showing before/after research projects",
+          "Raise prices: Research packages $150-400 based on complexity",
+          "Partner with essay writing services, online course creators, consultants",
+          "Build subscription model: $300/month for ongoing research support"
+        ],
+        earnings: "$1,500-3,500/month"
+      },
+      {
+        phase: "Month 4+",
+        title: "Premium Research Services",
+        steps: [
+          "Offer comprehensive research packages: $500-2000 per project",
+          "Target businesses needing market research, competitive analysis",
+          "Create online course: 'Research Mastery with AI' ($99-299)",
+          "Build team of researchers using your methodology",
+          "Develop proprietary research frameworks and sell templates"
+        ],
+        earnings: "$3,000-10,000+/month"
+      }
+    ]
+  },
+  
+  humata: {
+    id: "humata",
+    name: "Humata AI",
+    description: "AI-powered document analysis and chat with PDFs for instant insights",
+    category: "PDFs",
+    rating: 4.8,
+    reviews: 1820,
+    tags: ["PDF analysis", "Document chat", "Research"],
+    link: "https://humata.ai",
+    bannerImage: "",
+    relatedTools: ["notebooklm", "chatpdf", "updf"],
+    overview: "Humata AI is your intelligent document assistant that transforms how you interact with PDFs and documents. Upload research papers, contracts, reports, or any PDF, and Humata instantly becomes an expert on that content, answering questions, extracting insights, and generating summaries with precise citations.",
+    examples: [
+      {
+        title: "Contract Analysis",
+        description: "Analyze legal contracts and extract key terms",
+        input: "Upload 50-page software licensing agreement. Ask: 'What are the payment terms, termination clauses, and liability limitations?'",
+        output: "Payment Terms:\n- $5,000 annual license fee (page 3, section 2.1)\n- Payment due within 30 days of invoice (page 3, section 2.2)\n- Late payment penalty: 1.5% per month (page 4, section 2.3)\n\nTermination Clauses:\n- Either party may terminate with 60 days written notice (page 12, section 7.1)\n- Immediate termination for breach (page 13, section 7.2)\n\nLiability Limitations:\n- Liability capped at 12 months of fees paid (page 18, section 9.1)\n- No liability for indirect damages (page 18, section 9.2)"
+      },
+      {
+        title: "Academic Research Summary",
+        description: "Quickly understand research papers",
+        input: "Upload neuroscience research paper. Ask: 'What was the methodology, key findings, and limitations of this study?'",
+        output: "Methodology:\n- Randomized controlled trial with 200 participants\n- 12-week intervention period\n- fMRI brain scans at baseline and endpoint\n\nKey Findings:\n- 37% improvement in cognitive function\n- Significant changes in prefrontal cortex activity\n- Effects sustained at 6-month follow-up\n\nLimitations:\n- Small sample size from single institution\n- Predominantly male participants (72%)\n- Short follow-up period"
+      }
+    ],
+    howToUse: [
+      { title: "Upload Documents", description: "Sign up at humata.ai and upload your PDFs. Free plan allows up to 60 pages across unlimited files. Humata processes documents instantly and creates a searchable knowledge base." },
+      { title: "Ask Questions", description: "Type questions in natural language. Humata provides answers with page references and highlighted passages from your document. Click citations to jump to exact locations in the PDF." },
+      { title: "Generate Summaries", description: "Request summaries, key points, or comparisons across multiple documents. Humata can create executive summaries, extract action items, or compare terms across contracts." },
+      { title: "Use Advanced Features", description: "Export answers as Word or PDF documents. Share chat links with team members. Organize documents into folders for different projects or topics." }
+    ],
+    benefits: [
+      { title: "Instant Document Understanding", description: "Read and comprehend 100-page documents in minutes instead of hours." },
+      { title: "Precise Citations", description: "Every answer includes page numbers and exact quotes from your document." },
+      { title: "Multi-Document Analysis", description: "Compare information across multiple PDFs simultaneously." },
+      { title: "Secure & Private", description: "Your documents are encrypted and never used for AI training." }
+    ],
+    monetization: {
+      services: [
+        "Legal document review and summarization",
+        "Academic research paper analysis",
+        "Business contract comparison",
+        "Technical manual summarization",
+        "Due diligence document analysis",
+        "Compliance document review",
+        "Research literature reviews"
+      ],
+      platforms: [
+        "Fiverr - Document analysis services",
+        "Upwork - Legal research, contract review",
+        "LinkedIn - B2B document services",
+        "Freelancer - Technical documentation"
+      ],
+      toolCombinations: [
+        "Humata + ChatGPT (analyze + create reports)",
+        "Humata + Notion (organize insights)",
+        "Humata + Grammarly (polished summaries)",
+        "Humata + Google Docs (collaborative reviews)"
+      ],
+      tips: [
+        "Offer contract review packages: $75-200 per contract",
+        "Academic paper summaries: $25-50 per paper",
+        "Business report analysis: $100-300 per report",
+        "Bundle services: 'Analyze + Summary + Action Plan' for premium pricing",
+        "Target law firms, consultants, researchers, MBA students"
+      ]
+    },
+    roadmap: [
+      {
+        phase: "Week 1-2: Setup",
+        title: "Master Humata & Build Portfolio",
+        steps: [
+          "Get Humata Pro account ($15/month for unlimited pages)",
+          "Practice with 20+ different document types (contracts, research, reports)",
+          "Create portfolio: 5 sample analyses (contracts, papers, technical docs)",
+          "Build process templates for common requests",
+          "Set up professional profiles on Fiverr and Upwork"
+        ],
+        earnings: "Setup phase - $15 investment"
+      },
+      {
+        phase: "Week 3-4: First Clients",
+        title: "Launch Services & Get Sales",
+        steps: [
+          "Create 3 gigs: Contract analysis ($75), Research summaries ($40), Document comparison ($60)",
+          "Post in relevant Reddit communities offering first 3 clients 30% off",
+          "Target MBA students, law students, small businesses",
+          "Offer 'Document Digest' subscription: $150/month for 5 documents",
+          "Apply to 10-15 Upwork jobs daily"
+        ],
+        earnings: "$300-800"
+      },
+      {
+        phase: "Month 2-3: Scale",
+        title: "Increase Prices & Specialization",
+        steps: [
+          "Specialize in high-value niche (legal, medical, finance)",
+          "Raise prices: Premium packages $200-500",
+          "Build relationships with law firms, consulting firms",
+          "Create 'Express' service: 24-hour turnaround at 2x price",
+          "Hire assistant to handle basic tasks"
+        ],
+        earnings: "$2,000-5,000/month"
+      },
+      {
+        phase: "Month 4+",
+        title: "Premium Agency",
+        steps: [
+          "Build document analysis agency",
+          "Offer retainer packages: $1,000-3,000/month",
+          "Target mid-size companies needing ongoing support",
+          "Create proprietary analysis frameworks",
+          "Scale team to handle 50+ documents/month"
+        ],
+        earnings: "$5,000-15,000+/month"
+      }
+    ]
+  },
+  
+  gamma: {
+    id: "gamma",
+    name: "Gamma",
+    description: "AI-powered tool for creating beautiful presentations and docs in seconds",
+    category: "Presentations",
+    rating: 4.8,
+    reviews: 2400,
+    tags: ["Presentations", "AI design", "Fast"],
+    link: "https://gamma.app",
+    bannerImage: "",
+    relatedTools: ["beautiful-ai", "tome", "canva-magic"],
+    overview: "Gamma revolutionizes presentation creation with AI. Simply describe your topic or paste your content, and Gamma generates beautiful, professional presentations in seconds. No more fighting with slide layouts or design - Gamma handles everything automatically while you focus on your message.",
+    examples: [
+      {
+        title: "Startup Pitch Deck",
+        description: "Create investor-ready pitch deck in 5 minutes",
+        input: "Create a 10-slide pitch deck for 'EcoDelivery' - a sustainable last-mile delivery startup using electric vehicles. Include: problem, solution, market size, business model, traction, team, and ask.",
+        output: "[Generated Presentation]\n\nSlide 1: EcoDelivery - Sustainable Last-Mile Delivery\nSlide 2: Problem - $1T logistics industry produces 15% of global emissions\nSlide 3: Solution - 100% electric vehicle fleet with optimized routing\nSlide 4: Market Size - $200B last-mile delivery market, growing 20% annually\nSlide 5: Business Model - B2B SaaS + per-delivery fees\nSlide 6: Traction - 50 clients, $2M ARR, 85% MoM growth\nSlide 7: Team - Serial entrepreneurs with logistics expertise\nSlide 8: Competitive Advantage - AI routing saves 30% costs\nSlide 9: Financial Projections - $10M revenue Year 3\nSlide 10: Ask - $5M Series A to expand to 10 cities\n\n[Each slide professionally designed with images, icons, and data viz]"
+      },
+      {
+        title: "Product Launch Presentation",
+        description: "Marketing presentation for new product",
+        input: "Create a product launch presentation for 'FitTrack Pro' - an AI-powered fitness wearable. Target audience: health-conscious millennials. Tone: exciting and innovative.",
+        output: "[Generated Presentation with dynamic layouts]\n\nSlide 1: Introducing FitTrack Pro - Your AI Fitness Coach on Your Wrist\nSlide 2: The Problem with Current Wearables [pain points with visuals]\nSlide 3: Meet FitTrack Pro [hero product image]\nSlide 4: AI-Powered Features [icon grid with benefits]\nSlide 5: Real Results from Beta Users [testimonials + data]\nSlide 6: Pricing & Availability [pricing tiers]\nSlide 7: Pre-Order Today [CTA slide]\n\n[Modern design with gradients, animations, product photos]"
+      }
+    ],
+    howToUse: [
+      { title: "Start with AI Generation", description: "Click 'Create new AI' and describe your presentation topic. Be specific: 'Create a 15-slide sales training presentation for real estate agents covering prospecting, objection handling, and closing techniques.' Gamma generates a complete presentation in 30-60 seconds." },
+      { title: "Choose Your Style", description: "Select from multiple design themes (Minimal, Bold, Corporate, Creative). Gamma applies consistent branding, fonts, and colors automatically. Each theme is professionally designed and mobile-responsive." },
+      { title: "Refine with AI Editing", description: "Click any slide and ask AI to modify it: 'Make this slide more visual', 'Add a comparison table', 'Create a timeline', 'Add statistics and data'. Gamma regenerates that specific slide while maintaining overall consistency." },
+      { title: "Add Interactive Elements", description: "Insert videos, websites, charts, GIFs, and embeds directly into slides. Gamma presentations are web-based, so everything is interactive and clickable - not static like PowerPoint." },
+      { title: "Share & Present", description: "Get a shareable link instantly - no downloads or installations needed. Present from any device with a browser. Analytics show who viewed your presentation and for how long." }
+    ],
+    benefits: [
+      { title: "10x Faster Creation", description: "Create professional presentations in minutes instead of hours. AI handles all design and layout decisions." },
+      { title: "Always Beautiful", description: "Every presentation looks professionally designed with no effort. Impossible to make ugly slides." },
+      { title: "Interactive & Engaging", description: "Web-based presentations with videos, animations, and clickable elements beat static PowerPoint." },
+      { title: "Easy Collaboration", description: "Real-time collaboration with team members. Share links instantly without email attachments." }
+    ],
+    monetization: {
+      services: [
+        "Pitch deck creation for startups",
+        "Sales presentations for businesses",
+        "Course materials for educators",
+        "Marketing presentations",
+        "Event presentations",
+        "Portfolio presentations",
+        "Training materials"
+      ],
+      platforms: [
+        "Fiverr - Presentation design",
+        "Upwork - Business presentations",
+        "LinkedIn - B2B presentation services",
+        "99designs - Design marketplace",
+        "Your own website"
+      ],
+      toolCombinations: [
+        "Gamma + ChatGPT (content + design)",
+        "Gamma + Canva (presentations + graphics)",
+        "Gamma + Grammarly (polish copy)",
+        "Gamma + Loom (add video narration)"
+      ],
+      tips: [
+        "Pitch deck packages: $300-1,500 per deck",
+        "Offer 'Presentation Makeover': $150-400 to redesign existing slides",
+        "Subscription model: $500/month for unlimited presentations",
+        "Express delivery (24 hours): charge 50-100% premium",
+        "Target startups, sales teams, consultants, coaches"
+      ]
+    },
+    roadmap: [
+      {
+        phase: "Week 1-2: Master Gamma",
+        title: "Build Portfolio & Skills",
+        steps: [
+          "Create 10 sample presentations across different industries",
+          "Practice different styles: pitch decks, sales, training, marketing",
+          "Build presentation templates for common use cases",
+          "Get Gamma Pro ($8/month) for unlimited AI generations",
+          "Create before/after portfolio showcasing transformations"
+        ],
+        earnings: "Setup - $8/month investment"
+      },
+      {
+        phase: "Week 3-4: First Clients",
+        title: "Launch & Get Sales",
+        steps: [
+          "Create Fiverr gig: 'Professional Gamma Presentation' ($50-150)",
+          "Post on LinkedIn offering free presentation review",
+          "Join startup communities (Indie Hackers, Product Hunt) offering pitch deck services",
+          "Target small businesses needing sales presentations",
+          "Offer first 5 clients 40% off for testimonials"
+        ],
+        earnings: "$400-1,000"
+      },
+      {
+        phase: "Month 2-3: Scale",
+        title: "Premium Services",
+        steps: [
+          "Specialize in pitch decks - raise prices to $500-1,500",
+          "Partner with business consultants, coaches, agencies",
+          "Create 'Presentation Audit' service: $200 to review and improve",
+          "Build case studies showing client results (funding raised, deals closed)",
+          "Offer monthly retainer: $800-1,500 for ongoing presentation support"
+        ],
+        earnings: "$2,500-6,000/month"
+      },
+      {
+        phase: "Month 4+",
+        title: "Presentation Agency",
+        steps: [
+          "Build team of designers using Gamma",
+          "Target enterprise clients needing regular presentations",
+          "Create presentation template store: $29-99 per template",
+          "Offer 'Presentation Strategy' consulting: $1,500-5,000 per engagement",
+          "Scale to 30-50 presentations per month"
+        ],
+        earnings: "$8,000-20,000+/month"
+      }
+    ]
+  },
+  
+  cursor: {
+    id: "cursor",
+    name: "Cursor",
+    description: "AI-first code editor built for pair programming with AI",
+    category: "Code",
+    rating: 4.9,
+    reviews: 2800,
+    tags: ["Code editor", "AI pair programming", "Modern"],
+    link: "https://cursor.sh",
+    bannerImage: "",
+    relatedTools: ["github-copilot", "codeium", "lovable"],
+    overview: "Cursor is the AI-first code editor that feels like pair programming with the world's best developer. Built on VS Code, it adds powerful AI features that understand your entire codebase, write code with you in real-time, and help you ship features faster than ever before.",
+    examples: [
+      {
+        title: "Build Full Feature with AI",
+        description: "Create complete authentication system",
+        input: "Cmd+K: 'Add user authentication with email/password. Include: signup form, login form, password reset, protected routes, and session management. Use React, TypeScript, and Supabase.'",
+        output: "[Cursor generates multiple files]\n\n✓ Created: auth/SignupForm.tsx - Complete signup component\n✓ Created: auth/LoginForm.tsx - Login with validation\n✓ Created: auth/PasswordReset.tsx - Password reset flow\n✓ Created: hooks/useAuth.ts - Custom auth hook\n✓ Created: utils/supabase.ts - Supabase client setup\n✓ Updated: App.tsx - Added protected routes\n✓ Updated: types.ts - User type definitions\n\n[All files properly connected and working]"
+      },
+      {
+        title: "Refactor Legacy Code",
+        description: "Modernize old codebase",
+        input: "Select 200-line component. Cmd+K: 'Refactor this component to use modern React patterns: hooks instead of class, TypeScript types, separated concerns, custom hooks for logic, and proper error handling.'",
+        output: "[Cursor refactors the entire component]\n\n✓ Converted class to functional component\n✓ Added TypeScript interfaces for props and state\n✓ Extracted business logic to useProductData hook\n✓ Added error boundaries and loading states\n✓ Separated UI components from logic\n✓ Added comprehensive JSDoc comments\n✓ Improved performance with useMemo/useCallback\n\n[Clean, maintainable, modern code]"
+      },
+      {
+        title: "Debug Complex Issue",
+        description: "Find and fix bugs with AI",
+        input: "Cmd+L (Chat): 'The checkout isn't calculating tax correctly for Canadian orders. It works for US orders. Can you find the bug?'",
+        output: "I found the issue! In `utils/tax.ts` line 45:\n\n```typescript\n// Current (buggy)\nif (country === 'US') {\n  return price * taxRates[state];\n}\n// Missing Canadian tax logic!\n```\n\nThe function only handles US tax and returns `undefined` for Canadian orders, causing the NaN error.\n\nFix:\n```typescript\nif (country === 'US') {\n  return price * (taxRates[state] || 0);\n}\nif (country === 'CA') {\n  return price * (canadianTaxRates[province] || 0.13); // Default HST\n}\nreturn price; // No tax for other countries\n```\n\n[Apply this fix? Y/N]"
+      }
+    ],
+    howToUse: [
+      { title: "Install Cursor", description: "Download from cursor.sh (free). It's VS Code-based, so all your extensions, themes, and settings work instantly. Import your VS Code settings with one click." },
+      { title: "Use Cmd+K for Code Generation", description: "Press Cmd+K anywhere in a file to write code with AI. Be specific: 'Add error handling to this function', 'Convert this to TypeScript', 'Add loading states'. AI edits directly in your file, and you accept or reject changes." },
+      { title: "Chat with Your Codebase", description: "Press Cmd+L to open AI chat. Ask questions about your code: 'How does authentication work?', 'Where is the API key validated?', 'Why is this component re-rendering?'. AI has full context of your entire project." },
+      { title: "Cmd+Shift+K for Multi-File Edits", description: "Make changes across multiple files simultaneously. 'Add TypeScript types to all API calls', 'Implement dark mode across the app', 'Add error handling to all database queries'. AI edits multiple files in one go." },
+      { title: "Reference Code with @", description: "In chat, use @ to reference specific files, folders, or docs: '@utils/api.ts how do I use this?', '@docs what's the authentication flow?'. AI understands context from referenced code." }
+    ],
+    benefits: [
+      { title: "10x Faster Development", description: "Write features in hours instead of days. AI handles boilerplate, repetitive code, and implementation details." },
+      { title: "Understands Your Codebase", description: "AI knows your entire project structure, patterns, and conventions. Suggestions match your coding style automatically." },
+      { title: "Fewer Bugs", description: "AI catches errors while you type and suggests fixes for edge cases you might miss." },
+      { title: "Learn While Coding", description: "AI explains unfamiliar code, suggests best practices, and teaches you new patterns as you work." }
+    ],
+    monetization: {
+      services: [
+        "Custom web app development",
+        "MVP development for startups",
+        "Code refactoring & modernization",
+        "API integration services",
+        "Bug fixing & debugging",
+        "Feature development",
+        "Code review & optimization"
+      ],
+      platforms: [
+        "Upwork - Development jobs",
+        "Fiverr - Code services",
+        "Toptal - Premium clients",
+        "Gun.io - Software projects",
+        "LinkedIn - Direct clients",
+        "Your own dev agency site"
+      ],
+      toolCombinations: [
+        "Cursor + Lovable (rapid prototyping + custom code)",
+        "Cursor + Supabase (backend + frontend)",
+        "Cursor + Vercel (development + deployment)",
+        "Cursor + GitHub Copilot (double the AI power)"
+      ],
+      tips: [
+        "MVP development: $2,000-10,000 per project",
+        "Feature development: $500-2,000 per feature",
+        "Hourly rate: $50-150/hour (faster delivery = more profit)",
+        "Offer 'Code Audit': $500-1,500 to review and improve code",
+        "Target startups, agencies, and non-technical founders"
+      ]
+    },
+    roadmap: [
+      {
+        phase: "Week 1-2: Master Cursor",
+        title: "Learn AI-Powered Development",
+        steps: [
+          "Build 5 complete projects: Todo app, Blog, E-commerce, Dashboard, API",
+          "Practice Cmd+K for code generation in different scenarios",
+          "Master Cmd+L chat for debugging and explaining code",
+          "Learn multi-file editing with Cmd+Shift+K",
+          "Create portfolio site showcasing projects built with Cursor",
+          "Record speed-coding videos showing how fast you can build"
+        ],
+        earnings: "Learning phase - $0"
+      },
+      {
+        phase: "Week 3-4: First Clients",
+        title: "Land Development Gigs",
+        steps: [
+          "Create Fiverr gigs: 'Custom web app' ($300), 'MVP development' ($1,000), 'Bug fixes' ($100)",
+          "Apply to 15-20 Upwork jobs daily (filter by $500-5,000 budget)",
+          "Post on Twitter/LinkedIn: 'I build MVPs in 1-2 weeks. DM me your idea.'",
+          "Join Indie Hackers, Makerpad, and offer to build MVPs for ideas",
+          "Offer first 3 clients 30% off for portfolio and testimonials"
+        ],
+        earnings: "$1,000-3,000"
+      },
+      {
+        phase: "Month 2-3: Scale Income",
+        title: "Increase Rates & Efficiency",
+        steps: [
+          "Raise rates: MVP ($3,000-8,000), Features ($800-2,000), Hourly ($75-150)",
+          "Build reusable templates and starter kits (save 50% dev time)",
+          "Specialize in one stack: React + Node + Supabase or similar",
+          "Create 'Speed Development' packages with 1-week delivery",
+          "Partner with agencies to be their development arm",
+          "Upsell maintenance: $500-1,500/month per client"
+        ],
+        earnings: "$5,000-12,000/month"
+      },
+      {
+        phase: "Month 4+",
+        title: "Development Agency",
+        steps: [
+          "Build team of 2-3 developers using Cursor",
+          "Handle 5-10 projects simultaneously",
+          "Focus on high-value clients: $10,000-50,000 projects",
+          "Create SaaS products using Cursor for passive income",
+          "Offer 'Tech Co-Founder as a Service': $5,000-10,000/month retainers",
+          "Scale to $50,000-100,000/month revenue"
+        ],
+        earnings: "$15,000-50,000+/month"
+      }
+    ]
+  }
 };
