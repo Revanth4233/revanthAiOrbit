@@ -115,6 +115,96 @@ export const tools: Tool[] = [
   { id: "decktopus", name: "Decktopus", description: "AI presentation maker with auto-layout and design", category: "Presentations", rating: 4.5, reviews: 920, tags: ["Auto-layout", "Fast", "Simple"], link: "https://decktopus.com" },
   
   // Productivity AI Tools
+  { id: "clickup", name: "ClickUp", description: "All-in-one project management with AI-powered automation and task management", category: "Productivity", rating: 4.8, reviews: 4200, tags: ["Project management", "AI automation", "Team collaboration"], link: "https://clickup.com" },
+  { id: "notion", name: "Notion", description: "All-in-one workspace with AI writing assistant for notes, docs, and databases", category: "Productivity", rating: 4.7, reviews: 5800, tags: ["Workspace", "AI writing", "Organization"], link: "https://notion.so" },
+  { id: "taskade", name: "Taskade", description: "AI-powered task management and collaboration workspace", category: "Productivity", rating: 4.6, reviews: 1420, tags: ["Tasks", "Collaboration", "AI assistant"], link: "https://taskade.com" },
+  { id: "todoist", name: "Todoist", description: "Smart task manager with AI-powered task suggestions and natural language processing", category: "Productivity", rating: 4.7, reviews: 3200, tags: ["Task management", "Natural language", "Cross-platform"], link: "https://todoist.com" },
+  
+  // PDF & Document AI Tools
+  { id: "humata", name: "Humata AI", description: "AI-powered document analysis and chat with PDFs for instant insights", category: "PDFs", rating: 4.8, reviews: 1820, tags: ["PDF analysis", "Document chat", "Research"], link: "https://humata.ai" },
+  { id: "updf", name: "UPDF", description: "AI-powered PDF editor with translation, summarization, and analysis", category: "PDFs", rating: 4.7, reviews: 1540, tags: ["PDF editing", "AI features", "Translation"], link: "https://updf.com" },
+  { id: "chatpdf", name: "ChatPDF", description: "Chat with any PDF document using AI for instant answers and summaries", category: "PDFs", rating: 4.6, reviews: 2100, tags: ["PDF chat", "Summarization", "Free"], link: "https://chatpdf.com" },
+  { id: "doclime", name: "Doclime", description: "AI document assistant for research papers, legal docs, and technical documents", category: "PDFs", rating: 4.5, reviews: 920, tags: ["Research papers", "Legal docs", "Technical"], link: "https://doclime.com" },
+  { id: "notebooklm", name: "NotebookLM", description: "Google's AI research assistant that works with your documents and notes", category: "Research", rating: 4.9, reviews: 2800, tags: ["Research", "Google AI", "Document analysis"], link: "https://notebooklm.google.com" },
+  
+  // More Presentation Tools
+  { id: "slidesgo", name: "Slidesgo", description: "AI-enhanced presentation templates with customizable designs", category: "Presentations", rating: 4.6, reviews: 1680, tags: ["Templates", "Free", "Customizable"], link: "https://slidesgo.com" },
+  { id: "simplified", name: "Simplified", description: "All-in-one design platform with AI for presentations, graphics, and videos", category: "Design", rating: 4.7, reviews: 2100, tags: ["All-in-one", "AI design", "Templates"], link: "https://simplified.com" },
+  
+  // Vibe Coding Tools
+  { id: "lovable", name: "Lovable", description: "AI-powered app builder that generates full-stack applications from descriptions", category: "Code", rating: 4.9, reviews: 1580, tags: ["No-code", "Full-stack", "Rapid development"], link: "https://lovable.dev" },
+  { id: "windsurf", name: "Windsurf", description: "AI coding assistant for developers with intelligent code suggestions", category: "Code", rating: 4.6, reviews: 980, tags: ["Code assistant", "Developer tools", "AI suggestions"], link: "https://windsurf.dev" },
+  { id: "deepseek", name: "DeepSeek", description: "Advanced AI model for coding, reasoning, and research tasks", category: "Research", rating: 4.7, reviews: 1320, tags: ["Coding", "Reasoning", "Open source"], link: "https://deepseek.com" },
+  
+  // More Research Tools
+  { id: "kagi", name: "Kagi", description: "Premium AI-powered search engine with no ads and privacy focus", category: "Research", rating: 4.8, reviews: 1120, tags: ["Search", "Privacy", "Ad-free"], link: "https://kagi.com" },
+  
+  // Free Learning Resources
+  { id: "freecodecamp", name: "FreeCodeCamp", description: "Free coding education platform with AI-enhanced learning paths", category: "Education", rating: 4.9, reviews: 8500, tags: ["Free", "Coding", "Certifications"], link: "https://freecodecamp.org" },
+  { id: "roadmap-sh", name: "Roadmap.sh", description: "Interactive learning roadmaps for developers with AI-powered recommendations", category: "Education", rating: 4.8, reviews: 3200, tags: ["Learning paths", "Developers", "Free"], link: "https://roadmap.sh" },
+  { id: "google-skills", name: "Google Skills", description: "Free courses and certifications from Google with AI-driven personalization", category: "Education", rating: 4.7, reviews: 2800, tags: ["Free courses", "Certifications", "Google"], link: "https://skills.google" },
+  
+  // Prompt Writing Tools
+  { id: "g-prompter", name: "G-Prompter", description: "AI tool for generating and optimizing prompts for better AI outputs", category: "Productivity", rating: 4.6, reviews: 780, tags: ["Prompt engineering", "Optimization", "Free"], link: "https://g-prompter.com" },
+  
+  // Resume Tools
+  { id: "enhancv", name: "Enhancv", description: "AI-powered resume builder with professional templates and optimization", category: "Career", rating: 4.7, reviews: 2400, tags: ["Resume", "CV builder", "Professional"], link: "https://enhancv.com" },
+  
+  // Interview Prep
+  { id: "finalround", name: "Final Round AI", description: "AI interview copilot that helps you ace technical and behavioral interviews", category: "Career", rating: 4.8, reviews: 1620, tags: ["Interview prep", "Real-time help", "Career"], link: "https://finalroundai.com" },
+  { id: "lockedin", name: "LockedIn AI", description: "AI-powered interview preparation and practice platform", category: "Career", rating: 4.6, reviews: 980, tags: ["Interview practice", "AI feedback", "Career"], link: "https://lockedinai.com" },
+  
+  // Content Ideas
+  { id: "virality", name: "ViralityAI", description: "AI tool for generating viral content ideas and analyzing trends", category: "Marketing", rating: 4.5, reviews: 820, tags: ["Content ideas", "Viral marketing", "Trends"], link: "https://viralityai.net" },
+  
+  // More Image Generation
+  { id: "bluewillow", name: "BlueWillow", description: "Free AI image generator with diverse artistic styles", category: "Image", rating: 4.5, reviews: 1420, tags: ["Free", "Art generation", "Styles"], link: "https://bluewillow.ai" },
+  
+  // More Video Tools
+  { id: "mirage", name: "Mirage", description: "AI video generation platform for creating stunning visual content", category: "Video", rating: 4.6, reviews: 980, tags: ["Video generation", "Visual effects", "Creative"], link: "https://mirage.ai" },
+  { id: "aivideo", name: "AIVideo.com", description: "AI-powered video creation platform for marketing and social media", category: "Video", rating: 4.5, reviews: 820, tags: ["Marketing videos", "Social media", "Templates"], link: "https://aivideo.com" },
+  { id: "syllaby", name: "Syllaby.io", description: "AI video script writer and content planner for social media", category: "Video", rating: 4.6, reviews: 720, tags: ["Script writing", "Social media", "Planning"], link: "https://syllaby.io" },
+  { id: "riverside", name: "Riverside", description: "AI-powered podcast and video recording with studio-quality output", category: "Video", rating: 4.8, reviews: 2100, tags: ["Podcasting", "Recording", "Studio quality"], link: "https://riverside.fm" },
+  { id: "wisecut", name: "Wisecut", description: "AI video editor that automatically cuts silences and adds subtitles", category: "Video", rating: 4.6, reviews: 1120, tags: ["Auto-editing", "Subtitles", "Time-saving"], link: "https://wisecut.video" },
+  { id: "eddie-ai", name: "Eddie AI", description: "AI video editing assistant for automated post-production", category: "Video", rating: 4.5, reviews: 680, tags: ["Auto-editing", "Post-production", "AI assistant"], link: "https://eddie.ai" },
+  { id: "visla", name: "Visla", description: "AI video creation platform for businesses and teams", category: "Video", rating: 4.6, reviews: 920, tags: ["Business videos", "Team collaboration", "AI generation"], link: "https://visla.us" },
+  { id: "vidnoz", name: "Vidnoz", description: "AI video generator with avatars and voiceovers", category: "Video", rating: 4.5, reviews: 780, tags: ["AI avatars", "Voiceovers", "Quick creation"], link: "https://vidnoz.com" },
+  { id: "ossa", name: "Ossa AI", description: "AI-powered video creation for social media and marketing", category: "Video", rating: 4.4, reviews: 620, tags: ["Social media", "Marketing", "Templates"], link: "https://ossa.ai" },
+  { id: "pikalabs", name: "Pika Labs", description: "Text-to-video AI generator for creative video content", category: "Video", rating: 4.7, reviews: 1580, tags: ["Text-to-video", "Creative", "AI generation"], link: "https://pika.art" },
+  { id: "jupitrr", name: "Jupitrr AI", description: "AI video editor for adding B-roll footage automatically", category: "Video", rating: 4.5, reviews: 580, tags: ["B-roll", "Auto-editing", "Stock footage"], link: "https://jupitrr.com" },
+  { id: "filmora-ai", name: "Filmora AI", description: "Video editing software with AI-powered features and effects", category: "Video", rating: 4.7, reviews: 3200, tags: ["Video editing", "AI effects", "User-friendly"], link: "https://filmora.wondershare.com" },
+  { id: "gling", name: "Gling.ai", description: "AI video editor that automatically removes bad takes and silences", category: "Video", rating: 4.6, reviews: 880, tags: ["Auto-editing", "YouTube", "Time-saving"], link: "https://gling.ai" },
+  { id: "vmaker", name: "Vmaker", description: "AI-powered screen recorder and video editor", category: "Video", rating: 4.6, reviews: 1020, tags: ["Screen recording", "Video editing", "Tutorials"], link: "https://vmaker.com" },
+  
+  // Photo Editing Tools
+  { id: "watermark-remover", name: "Watermark Remover", description: "AI tool to remove watermarks from images instantly", category: "Design", rating: 4.5, reviews: 1420, tags: ["Watermark removal", "Image editing", "Free"], link: "https://watermarkremover.io" },
+  
+  // Writing Tools
+  { id: "hemingway", name: "Hemingway Editor", description: "AI writing tool that makes your writing bold and clear", category: "Writing", rating: 4.6, reviews: 2100, tags: ["Clarity", "Readability", "Editing"], link: "https://hemingwayapp.com" },
+  
+  // Design Tools
+  { id: "microsoft-designer", name: "Microsoft Designer", description: "AI-powered graphic design tool integrated with Microsoft 365", category: "Design", rating: 4.6, reviews: 1820, tags: ["Graphic design", "Microsoft", "Templates"], link: "https://designer.microsoft.com" },
+  
+  // Data Analytics
+  { id: "knime", name: "KNIME", description: "Open-source data analytics platform with AI and machine learning", category: "Analytics", rating: 4.7, reviews: 1280, tags: ["Data science", "ML", "Open source"], link: "https://knime.com" },
+  
+  // Email & Marketing
+  { id: "moosend", name: "Moosend", description: "Email marketing platform with AI-powered automation", category: "Marketing", rating: 4.6, reviews: 980, tags: ["Email marketing", "Automation", "Free tier"], link: "https://moosend.com" },
+  
+  // SEO Tools
+  { id: "moz", name: "Moz Keyword Explorer", description: "SEO tool with AI-powered keyword research and analysis", category: "SEO", rating: 4.7, reviews: 3200, tags: ["SEO", "Keywords", "Analytics"], link: "https://moz.com" },
+  
+  // Music Tools
+  { id: "mubert", name: "Mubert", description: "AI music generator creating royalty-free tracks for any content", category: "Audio", rating: 4.6, reviews: 1420, tags: ["Music generation", "Royalty-free", "Instant"], link: "https://mubert.com" },
+  
+  // AI Development
+  { id: "huggingface", name: "Hugging Face", description: "AI community platform with models, datasets, and ML tools", category: "Development", rating: 4.8, reviews: 4200, tags: ["AI models", "ML", "Open source"], link: "https://huggingface.co" },
+  
+  // Automation
+  { id: "bardeen", name: "Bardeen", description: "AI automation tool for repetitive tasks and workflows", category: "Productivity", rating: 4.7, reviews: 1680, tags: ["Automation", "Workflows", "Browser extension"], link: "https://bardeen.ai" },
+  
+  // Project Ideas
+  { id: "engg-room", name: "Engg Room", description: "Platform for engineering project ideas and resources", category: "Education", rating: 4.5, reviews: 680, tags: ["Projects", "Engineering", "Ideas"], link: "https://enggroom.com" },
   { id: "notion", name: "Notion", description: "All-in-one workspace with powerful AI features", category: "Productivity", rating: 4.8, reviews: 5400, tags: ["Workspace", "AI assistant", "Organization"], link: "https://notion.so" },
   { id: "mem", name: "Mem", description: "AI-powered note-taking with automatic organization", category: "Productivity", rating: 4.6, reviews: 1120, tags: ["Notes", "AI organization", "Search"], link: "https://mem.ai" },
   { id: "reflect", name: "Reflect", description: "AI-enhanced note-taking for networked thought", category: "Productivity", rating: 4.7, reviews: 980, tags: ["Notes", "Backlinking", "AI assistant"], link: "https://reflect.app" },
